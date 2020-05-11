@@ -19,6 +19,9 @@ Each team creates a fork from this for their course project
     4 https://plotly.com/python/bar-charts/
     5 https://stackoverflow.com/questions/28679930/how-to-drop-rows-from-pandas-data-frame-that-contains-a-particular-string-in-a-p <br>
     6 https://stackoverflow.com/questions/39141856/capitalize-first-letter-of-each-word-in-the-column-python<br>
+    7 https://plotly.com/python/treemaps/ <br>
+    8 https://plotly.com/python/line-and-scatter/ <br>
+    9 https://statistics.laerd.com/statistical-guides/pearson-correlation-coefficient-statistical-guide.php<br>
 
 <b>Introduction:</b>
 

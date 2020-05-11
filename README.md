@@ -66,6 +66,13 @@ Countries that have higher internet usage will have higher volumes of personal d
 <b>Conclusion for Hypothesis 2:</b><br>
 We can conclude that there isn't a strong linear relationship between data breaches and average internet usage over the years.Therefore our proposed hypothesis does not hold true.
 
+<b>Suggestion for Hypothesis 2:</b><br>
+Whether the population of a country plays a role in the no. of databreaches?<br>
+
+![](/Figures/7.PNG)
+
+We can see that countries with larger populations, generally have higher no. of data breaches. Therefore the population of a country is realted to the number of data breaches that occur.
+
 <b>Hypothesis 3: We expect that countries with higher secure internet servers would have lesser cases of data breaches</b><br>
 The countries that have higher no. of secure servers will be well prepared for data breaches. Therefore we assume that the countires with higher number of seccure servers would have lesser data breaches.
 

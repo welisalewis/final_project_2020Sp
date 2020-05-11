@@ -1,17 +1,13 @@
-
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import plotly.express as px
-import plotly.graph_objects as go
 import warnings
 
-import profiler as profiler
+import matplotlib.pyplot as plt
+import pandas as pd
+import plotly.express as px
 
 warnings.filterwarnings('ignore')
 
 
-# import geopandas as gpd
+
 
 def remove_null(dataframe):
     """
@@ -105,6 +101,7 @@ def plot_bar_graph(x, y, title, x_label, y_label):
 
     return: The bar graph plot
 
+
     """
 
     fig, ax = plt.subplots(figsize=(15, 5))
@@ -189,6 +186,28 @@ def data_breach_plot(dataframe, x, y):
     param : dataframe
 
     return: scatter plot
+    >>> df = pd.DataFrame([["Afghanistan",5.594427,3.0]],columns=["Country","Average Internet usage over the years","No. of Data Breaches"])
+    >>> x="No. of Data Breaches"
+    >>> y="Average Internet usage over the years"
+    >>> data_breach_plot(df,x,y)
+    Figure({
+        'data': [{'hovertemplate': ('No. of Data Breaches=%{x}<br>A' ... ' the years=%{y}<extra></extra>'),
+                  'legendgroup': '',
+                  'marker': {'color': '#636efa', 'symbol': 'circle'},
+                  'mode': 'markers',
+                  'name': '',
+                  'showlegend': False,
+                  'type': 'scatter',
+                  'x': array([3.]),
+                  'xaxis': 'x',
+                  'y': array([5.594427]),
+                  'yaxis': 'y'}],
+        'layout': {'legend': {'tracegroupgap': 0},
+                   'margin': {'t': 60},
+                   'template': '...',
+                   'xaxis': {'anchor': 'y', 'domain': [0.0, 1.0], 'title': {'text': 'No. of Data Breaches'}},
+                   'yaxis': {'anchor': 'x', 'domain': [0.0, 1.0], 'title': {'text': 'Average Internet usage over the years'}}}
+    })
     """
     fig = px.scatter(dataframe, x=x, y=y)
 
@@ -201,6 +220,41 @@ def plot_treemap(dataframe, path, values, color, hover_data, color_continuous_sc
     param : dataframe
     return : treemap plot
 
+    >>> df = pd.DataFrame([["United States",21517004.0,29928.0]],columns=["Country","No.of Secure Servers","No. of Data Breaches"])
+    >>> path=['Country']
+    >>> values = 'No.of Secure Servers'
+    >>> color='No. of Data Breaches'
+    >>> hover_data=['Country']
+    >>> color_continuous_scale = 'PuOr'
+    >>> plot_treemap(df,path,values,color,hover_data,color_continuous_scale)
+    Figure({
+        'data': [{'branchvalues': 'total',
+                  'customdata': array([['United States', 29928.0]], dtype=object),
+                  'domain': {'x': [0.0, 1.0], 'y': [0.0, 1.0]},
+                  'hovertemplate': ('Country=%{customdata[0]}<br>No' ... 'nt}<br>id=%{id}<extra></extra>'),
+                  'ids': array(['United States'], dtype=object),
+                  'labels': array(['United States'], dtype=object),
+                  'marker': {'coloraxis': 'coloraxis', 'colors': array([29928.])},
+                  'name': '',
+                  'parents': array([''], dtype=object),
+                  'type': 'treemap',
+                  'values': array([21517004.])}],
+        'layout': {'coloraxis': {'colorbar': {'title': {'text': 'No. of Data Breaches'}},
+                                 'colorscale': [[0.0, 'rgb(127,59,8)'], [0.1,
+                                                'rgb(179,88,6)'], [0.2,
+                                                'rgb(224,130,20)'], [0.3,
+                                                'rgb(253,184,99)'], [0.4,
+                                                'rgb(254,224,182)'], [0.5,
+                                                'rgb(247,247,247)'], [0.6,
+                                                'rgb(216,218,235)'], [0.7,
+                                                'rgb(178,171,210)'], [0.8,
+                                                'rgb(128,115,172)'], [0.9,
+                                                'rgb(84,39,136)'], [1.0,
+                                                'rgb(45,0,75)']]},
+                   'legend': {'tracegroupgap': 0},
+                   'margin': {'t': 60},
+                   'template': '...'}
+    })
     """
     fig = px.treemap(dataframe, path=path, values=values,
                      color=color, hover_data=hover_data,
@@ -225,7 +279,5 @@ def check_correlation(dataframe, col_list):
 
     return corr_value
 
-# shapefile = 'C:/Users/Acer/Desktop/final_project_2020Sp/110m_cultural/ne_110m_admin_0_countries.shp'
-# Read shapefile using Geopandas
-# gdf = gpd.read_file(shapefile)[['ADMIN', 'ADM0_A3', 'geometry']]
+
 

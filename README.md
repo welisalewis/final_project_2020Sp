@@ -95,7 +95,7 @@ Through the treemap above we can see that the countries that have higher no. of 
 
 <b>Individual Work:</b>
 
-Welisa Lewis : 
+Welisa Lewis : <br>
 1 - Worked on testing and created code for Hypothesis 2 and 3.<br>
 2 - To better display the hypothesis results through efficient visualizations, Welisa created bubble chart, world map and scatterplot.<br>
 3 - Created functions and doc tests for the same. Following is the list of functions written and tested by Welisa:<br>

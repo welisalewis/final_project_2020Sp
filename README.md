@@ -83,3 +83,34 @@ The countries that have higher no. of secure servers will be well prepared for d
 
 <b>Conclusion for Hypothesis 3:</b><br>
 Through the treemap above we can see that the countries that have higher no. of secure servers are also prone to more data breaches.Therefore our hypothesis does not hold true.
+
+
+<b>Contributions: </b>
+
+1- Both Welisa and Gaganpreet worked on formulating the hypothesis and collected data from various sources to do exploratory analysis. <br>
+
+2 - Both of the team members worked on writing and updating the Read me file and collborately worked on creating the presentation to show the progress and to get feedback. <br>
+
+3 - Both of the team members worked on the repository and continuosly kept updating the files. We tried to make different versions of the files to keep track of the changes <br>
+
+<b>Individual Work:</b>
+
+Welisa Lewis : 
+1 - Worked on testing and created code for Hypothesis 2 and 3.<br>
+2 - To better display the hypothesis results through efficient visualizations, Welisa created bubble chart, world map and scatterplot.<br>
+3 - Created functions and doc tests for the same. Following is the list of functions written and tested by Welisa:<br>
+plot_world_map()<br>
+scatter_plot()<br>
+data_breach_plot()<br>
+plot_treemap()<br>
+
+Gaganpreet :<br>
+1 - Worked on testing and writing the code for Hypothesis 1 <br>
+2 - Created bar graphs to better display the results of the Hypothesis through visualizations<br>
+3 - Created functions and doc tests for the following functions and tested them.<br>
+remove_null()<br>
+replace_values()<br>
+rename_columns()<br>
+plot_bar_graph()<br>
+check_correlation()<br>
+
